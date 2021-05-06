@@ -2,7 +2,7 @@
 cd /tmp/rec
 rm -rf .repo
 cd /tmp/rec
-cd device/realme/CPH1861
+cd device/oppo/CPH1861
 patchelf --set-interpreter /system/bin/linker64 recovery/root/system/bin/*
 cd /tmp/rec
 source build/envsetup.sh
