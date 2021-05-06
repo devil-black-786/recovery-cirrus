@@ -21,5 +21,4 @@ ls
 
 ##delete these lines, and replace with your own lines of device sauce
 git clone https://github.com/buddi56/dummy_CPH1861_TWRP device/oppo/CPH1861
-
 cd /tmp/rec
