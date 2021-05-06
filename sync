@@ -1,15 +1,15 @@
 #!/bin/bash
 sudo apt install wget
 MANIFEST=git://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni.git
-BRANCH=twrp-10.0 
+BRANCH=twrp-9.0 
 
 mkdir -p /tmp/rec
 cd /tmp/rec
 
 # Repo init command, that -device,-mips,-darwin,-notdefault part will save you more time and storage to sync, add more according to your rom and choice.Optimization is welcomed! Let's make it quit, and with depth=1 so that no unnecessary things.
 repo init --no-repo-verify --depth=1 -u "$MANIFEST" -b "$BRANCH" -g default,-device,-mips,-darwin,-notdefault
-git config --global user.name "sarthakroy2002"
-git config --global user.email "sarthakroy2002@gmail.com"
+git config --global user.name "devil-black-786"
+git config --global user.email "fahimahmad904@gmail.com"
 
 sudo apt-get update -y
 sudo apt-get install -y patchelf
@@ -20,7 +20,6 @@ pwd
 ls
 
 ##delete these lines, and replace with your own lines of device sauce
-git clone https://github.com/sarthakroy2002/android_recovery_realme_RMX2020-SHRP.git device/realme/RMX2020
-git clone https://github.com/sarthakroy2002/kernel_realme_RMX2020.git kernel/realme/RMX2020
+git clone https://github.com/buddi56/dummy_CPH1861_TWRP device/oppo/CPH1861
 
 cd /tmp/rec

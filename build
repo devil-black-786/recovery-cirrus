@@ -2,11 +2,11 @@
 cd /tmp/rec
 rm -rf .repo
 cd /tmp/rec
-cd device/realme/RMX2020
+cd device/realme/CPH1861
 patchelf --set-interpreter /system/bin/linker64 recovery/root/system/bin/*
 cd /tmp/rec
 source build/envsetup.sh
-lunch omni_RMX2020-eng
+lunch omni_CPH1861-eng
 export SKIP_API_CHECKS=true
 export SKIP_ABI_CHECKS=true
 export ALLOW_MISSING_DEPENDENCIES=true
@@ -23,11 +23,11 @@ ccache -c
 make_rec(){
 	mka recoveryimage
 	curl -sL https://git.io/file-transfer | sh
-	./transfer wet out/target/product/RMX2020/*.img
-    ./transfer wet out/target/product/RMX2020.zip
-    ./transfer wet out/target/product/RMX2020/*Official*.zip
-	./transfer wet out/target/product/RMX2020/*OFFICIAL*.zip
-    ./transfer wet out/target/product/RMX2020/*Add*.zip
+	./transfer wet out/target/product/CPH1861/*.img
+    ./transfer wet out/target/product/CPH1861.zip
+    ./transfer wet out/target/product/CPH1861/*Official*.zip
+	./transfer wet out/target/product/CPH1861/*OFFICIAL*.zip
+    ./transfer wet out/target/product/CPH1861/*Add*.zip
 }
 
 make_rec
